@@ -1,0 +1,8 @@
+{
+  "name": "AetherFlow Documentation",
+  "description": "A highly interactive, beautifully crafted developer and user manual for AetherFlow platform, with an AI documentation assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
