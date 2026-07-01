@@ -24,7 +24,7 @@ export const DOCS: DocSection[] = [
   {
     id: "about-company",
     title: "Welcome to Hearit.ai!",
-    subtitle: "The vision, team, and acoustic intelligence driving real-time audio analytics.",
+    subtitle: "Hear the Real World. Power the Next Action.",
     category: "company",
     icon: "Building",
     readingTime: 3,
@@ -179,14 +179,18 @@ Join our [Discord server](https://discord.com/invite/6Gv3sdhrQZ) for:
   {
     id: "ha-mic01b",
     title: "HA-MIC01B",
-    subtitle: "Hearit.ai ChatMic Pro - Ultra-lightweight wearable wireless smart microphone array.",
+    subtitle: "Your Smart AI Voice Assistant with Mode Switching.",
     category: "microphone-devices",
     icon: "Mic",
-    readingTime: 2,
-    keywords: ["microphone", "acoustic", "audio", "sensor", "hardware", "device", "ha-mic01b", "wearable", "chatmic"],
-    content: `## HA-MIC01B Hearit.ai ChatMic Pro
+    readingTime: 3,
+    keywords: ["microphone", "acoustic", "audio", "sensor", "hardware", "device", "ha-mic01b", "chatmic", "compact"],
+    content: `### 1. Introduction
 
-The **HA-MIC01B** (Hearit.ai ChatMic Pro) is an ultra-lightweight wearable wireless smart microphone array designed for seamless communication and real-time acoustic ingestion.
+![HA-MIC01B](https://hearit.ai/wp-content/uploads/2026/07/MIC06B-2.jpg)
+
+Your Smart AI Voice Assistant with Mode Switching
+
+The HA-MIC01B is a compact, AI-powered voice assistant designed to help you easily capture and organize voice information through cutting-edge AI technology. Featuring intelligent mode switching capabilities, the HA-MIC01B allows you to seamlessly adapt between different AI functions with a single button press, making it your versatile partner for meetings, learning, and daily communication.
 
 ---
 
@@ -195,76 +199,292 @@ The **HA-MIC01B** (Hearit.ai ChatMic Pro) is an ultra-lightweight wearable wirel
 | Function | Parameter Details |
 | :--- | :--- |
 | **Product Model** | HA-MIC01B |
-| **Product Name** | Hearit.ai ChatMic Pro |
-| **Dimensions** | 45 × 19 × 19.5 mm |
-| **Net Weight** | 8.6g |
+| **Product Name** | Hearit.ai ChatMic |
+| **Product Size** | 45 × 19 × 21 mm |
+| **Net Weight** | 7 g |
 | **Material** | ABS |
-| **Connection** | Bluetooth 5.3 |
+| **Microphone System** | Single high-sensitivity microphone |
+| **Connection** | Bluetooth 5.2 |
 | **Transmission Frequency** | 2.4–2.48 GHz |
-| **Transmission Distance** | 10M |
+| **Transmission Distance** | 10 m |
 | **Battery Capacity** | 3.7V, 80mAh |
 | **Charging Interface** | USB Type-C |
-| **Charging Specification** | 5V / 150mA |
+| **Charging Voltage** | 5V / 150mA |
 | **Charging Time** | 1 hour |
 | **Working Time** | 8 hours |
-| **Microphone** | Single high-sensitivity microphone |
-| **Interactive control** | Front button, side button, buzzer |
+| **Controls** | Physical mode switching button; 4 AI operation modes |
 | **App Support** | Hearit.AI (iOS 11.0+ / Android 7.0+) |
 
 ---
 
-### Key Applications
+### Core Features Overview
 
-1. **Wearable Voice Command**  
-   Perfect for small, clip-on applications requiring hands-free convenience and high-sensitivity voice capture.
-2. **On-the-go Interaction**  
-   Long working times and fast charging ensure reliable performance throughout active work sessions.`
+| Feature | Description / Specifications |
+| :--- | :--- |
+| **AI Voice Interaction** | Connect to cloud-based large language models (powered by ChatGPT) for intelligent Q&A and content summarization |
+| **High-Quality Recording** | Real-time audio streaming to the Hearit.AI App—never miss any important details |
+| **Multi-Platform Compatibility** | Seamlessly connects to iOS and Android devices through the Hearit.AI App |
+| **Long Battery Life** | Up to 8 hours of continuous operation for reliable daily use |
+| **Smart Mode Switching** | Effortlessly switch between 4 AI modes with physical button |
+| **52+ Language Support** | Automatic language detection with comprehensive global coverage |
+| **Ultra-Compact Design** | Only 7g weight, wear it like a smart accessory |
+
+---
+
+### Built for Real-World Workflows
+
+#### Field Service & On-site Maintenance
+![Field Service & On-site Maintenance](https://iili.io/CR66tPj.png)
+
+HA-MIC01B enables hands-free documentation during equipment maintenance and on-site inspections. It captures spoken notes in real time and converts them into structured work logs, reducing missed details and improving field efficiency.
+
+
+#### Healthcare & Clinical Documentation
+![Healthcare & Clinical Documentation](https://iili.io/CR6m4qP.png)
+
+During consultations and patient care, HA-MIC01B helps medical staff stay focused on patients instead of manual note-taking. It records conversations and automatically generates structured clinical summaries, including symptoms, observations, and key actions.
+
+#### Sales & Client Meetings
+![Sales & Client Meetings](https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80)
+
+In client meetings and on-site sales visits, HA-MIC01B continuously captures conversations and extracts key insights such as requirements, budgets, intent, and next steps. It turns unstructured discussions into CRM-ready records and follow-up tasks.
+
+#### Logistics & Warehouse Operations
+![Logistics & Warehouse Operations](https://iili.io/CRPzyCP.png)
+
+HA-MIC01B streamlines communication in logistics and warehouse environments. Voice instructions are instantly converted into operational records such as received goods, stock updates, and exception reports, enabling faster and more accurate execution.
+
+---
+
+### Quick Start Guide
+
+The HA-MIC01B is a compact AI-powered voice recording device with Bluetooth connectivity and intelligent mode switching, designed for real-time voice capture and AI-powered transcription and analysis.
+
+**What's in the box?**
+* 1 × HA-MIC01B Device
+* 1 × Type-C Charging Cable
+
+![HA-MIC01B Product Unboxing Scene](https://hearit.ai/wp-content/uploads/2026/07/MIC06B-1.jpg)
+
+#### Step 1: Unboxing & Charging
+* Take the HA-MIC01B device and Type-C charging cable out of the package.
+* Before first use, we recommend fully charging the device using the included charging cable
+* **Charging**: Green LED solid
+* **Fully charged**: LED turns off
+* The device will automatically wake up when you press any button
+
+#### Step 2: Choose Your Usage Mode
+
+This mode provides full access to AI features and cloud processing through the Hearit.AI mobile app.
+
+##### 1. Download the App:
+* Search for "Hearit.AI" in the Apple App Store or Google Play Store to download and install
+* Download links: [Android](https://play.google.com/store/apps/details?id=ai.gmic.app) / [iOS](https://hearit.ai/app/ios)
+*  Open the App and complete registration or login as prompted
+
+##### 2. Wake Up Device:
+* Single-press the Front button or Side button to wake up the device
+  * **LED**: Red-blue alternating flashes (3 times)
+  * Device is now broadcasting a BLE signal
+
+##### 3. Bluetooth Pairing:
+* Enable Bluetooth on your phone
+* In the Hearit.AI App home page, tap "Add Device" and select your device model (HA-MIC01B) from the list
+* From the device list, select the device whose name begins with "HA-"
+* Successful Pairing:
+  * **LED**: Blue flashes (3 times, 0.8s interval)
+  * A short beep confirms connection
+  * App will display "Connected"
+
+![Add Device](https://iili.io/CAtkpgn.png)
+
+#### Step 3: Start Using
+
+Congratulations! Your device is now set up. You can now begin recording and switching between AI modes with the HA-MIC01B.
+
+---
+
+### Hardware Guide
+
+The HA-MIC01B has 3 physical buttons: Front Button, Side Up Button, and Side Down Button.
+
+![HA-MIC01B Hardware Controls](https://hearit.ai/wp-content/uploads/2026/07/MIC06B-3.jpg)
+
+#### Button Operations
+
+##### Front Button (Voice Control)
+
+| Operation | Function | LED | Audio Feedback |
+| :--- | :--- | :--- | :--- |
+| **Single Press (Connected)** | Start/Stop recording | Blue solid (recording) | Short beep (1×) |
+| **Single Press (Disconnected)** | Wake up device | Red flashes (2×, 0.5s) | None |
+
+##### Side Button (Mode Switch / Power Control)
+
+| Operation | Function | LED | Audio Feedback |
+| :--- | :--- | :--- | :--- |
+| **Single Press** | Cycle through AI modes: Translation → Meeting → Custom → Note-Taking | Blue flash (1×) | Short vibration |
+| **Long Press (3s)** | Power off the device | LED off | None |
+| **Long Press (Connected)** | Trigger mode announcement via app TTS | None | Voice announcement |
+
+#### LED Indicator Status
+
+##### General Status
+
+| Status | LED Pattern | Meaning |
+| :--- | :--- | :--- |
+| **Wake-Up** | Red-blue alternating flashes (3×) | Device waking up |
+| **Pairing Success** | Blue flashes (3×, 0.8s interval) | Bluetooth paired successfully |
+| **Recording** | Blue solid | Recording active |
+| **Mode Switch** | Blue flash (1×) | Mode changed |
+| **BLE Disconnected** | Red flashes (2×, 0.5s interval) | Connection lost |
+
+##### Power Status
+
+| Status | LED Pattern | Meaning |
+| :--- | :--- | :--- |
+| **Charging** | Green solid | Charging in progress |
+| **Fully Charged** | LED off | Charging complete |
+
+#### Power & Charging
+
+* **Interface**: USB Type-C
+* **Charging Status**:
+  * **Charging**: Green LED solid
+  * **Fully Charged**: LED turns off
+* **Battery Management**:
+  * **Working Time**: Up to 8 hours continuous use
+  * **Auto-Sleep**: Device enters sleep mode after 5 minutes of no connection (LED off)
+
+---
+
+### Features in Detail
+
+#### AI Voice Interaction Modes
+The HA-MIC01B features physical mode switching via the Side button. Press the Side button once to cycle through 4 AI-powered operation modes. The device supports 52+ language support with automatic language detection.
+
+**Mode Cycle Order**: Translation → Meeting → Custom → Note-Taking → (repeats)
+
+##### Translation Mode
+* **52+ Languages Supported**: Comprehensive global language coverage
+* **Automatic Language Detection**: No need to manually select input language
+* **AI-powered translation with voice output**: Real-time translation using advanced AI
+* **Azure + Whisper Layered Translation**: Enterprise-grade translation accuracy
+* **Great for international conversations**: Perfect for business meetings and travel
+
+##### Meeting Recorder
+* **Multi-language Meeting Support**: Automatically handles multilingual participants
+* **Record meetings with high-quality audio**: Professional-grade recording
+* **Convert speech to text with accuracy**: Real-time transcription in 52+ languages
+* **Get organized meeting summaries**: AI-powered summaries with key points extraction
+
+##### Custom Model
+* **ChatGPT Integration**: Powered by advanced AI for intelligent responses
+* **Add your own AI instructions**: Customize AI behavior for specific use cases
+* **Choose from ready-to-use models**: Pre-configured models for different industries
+* **Multi-language AI Interaction**: ChatGPT responds in the user's preferred language
+
+**You can**:
+* **Perform intelligent Q&A**: Ask the AI any questions
+* **Generate content summaries**: Let the AI help you summarize key points from conversations
+
+##### Note Taking Mode
+* **Global Note Taking**: Take notes in any of the 52+ supported languages
+* **Speak your tasks naturally**: Natural language processing for task creation
+* **Auto-organize into categories**: AI automatically categorizes and structures notes
+* **Smart deadline detection**: Automatically identifies and sets deadlines from speech
+
+#### Recording Management
+* **Start Recording**: Single-press Front button (when connected to app)
+* **Stop Recording**: Single-press Front button again
+* **Real-Time Audio**: Audio streams to the app instantly for processing
+* **Mode Switching**: Single-press Side button to cycle through modes
+* **Mode Announcement**: Long-press Side button to hear current mode via app TTS
+* **Auto-Reconnect**: When app restarts with Bluetooth enabled, device automatically reconnects (LED: Blue flashes 3×, 0.8s interval)`
   },
   {
     id: "ha-mic01c",
     title: "HA-MIC01C",
-    subtitle: "Hearit.ai ChatMic Pro (with Offline Recording) - High-sensitivity wireless smart microphone array.",
+    subtitle: "HA-MIC01C is a professional-grade wearable smart recorder featuring standalone local recording with 128MB SPI NAND flash memory and Bluetooth 5.4.",
     category: "microphone-devices",
     icon: "Mic",
-    readingTime: 2,
-    keywords: ["microphone", "acoustic", "audio", "sensor", "hardware", "device", "ha-mic01c", "wearable", "chatmic"],
-    content: `## HA-MIC01C Hearit.ai ChatMic Pro (with Offline Recording)
+    readingTime: 3,
+    keywords: ["microphone", "acoustic", "audio", "sensor", "hardware", "device", "ha-mic01c", "offline", "recorder"],
+    content: `### 1. Introduction
 
-The **HA-MIC01C** is an advanced wearable wireless smart microphone array featuring high-sensitivity audio capture and dual-mode functionality including standalone offline local recording.
+![HA-MIC01C](https://images.unsplash.com/photo-1590608897129-79da98d15969?auto=format&fit=crop&w=800&q=80)
+
+Your Standalone Offline Recording Companion
+
+The HA-MIC01C is a wearable smart microphone designed specifically for situations requiring instant, high-reliability voice recording without a persistent smartphone connection. With its built-in 128MB high-speed SD NAND flash memory, you can record up to 16 hours of continuous high-fidelity audio directly on the device.
 
 ---
 
-### Technical Specifications
+### 2. Technical Specifications
 
 | Function | Parameter Details |
 | :--- | :--- |
 | **Product Model** | HA-MIC01C |
-| **Product Name** | Hearit.ai ChatMic Pro |
-| **Dimensions** | 45 × 19 × 19.5 mm |
+| **Product Name** | Standalone Wearable Smart Recorder |
+| **Product Size** | 45 × 19 × 19.5 mm |
 | **Net Weight** | 8.8g |
-| **Material** | ABS |
-| **Connection** | Bluetooth 5.4 |
-| **Transmission Frequency** | 2.4–2.48 GHz |
+| **Material** | Ultra-durable ABS |
+| **Microphone System** | High-sensitivity omnidirectional condenser microphone |
+| **Bluetooth Version** | Bluetooth 5.4 Low Energy |
+| **Transmission Frequency** | 2.4-2.48GHz |
 | **Transmission Distance** | 10M |
-| **Battery Capacity** | 3.7V, 80mAh |
-| **Charging Interface** | USB Type-C |
-| **Charging Specification** | 5V / 150mA |
+| **Storage Capacity** | 128MB SPI NAND Flash (approx. 16 hours audio storage) |
+| **Additional Features** | Standalone Offline Recording<br/>USB Mass Storage Mode<br/>Interactive front/side buttons & buzzer |
+| **Charging Interface** | Type-C |
+| **Charging Voltage** | 5V / 150mA |
 | **Charging Time** | 1 hour |
-| **Working Time** | 8 hours |
-| **Microphone** | Single high-sensitivity microphone |
-| **Local Storage** | 128MB SD NAND |
-| **Interactive control** | Front button, side button, buzzer |
-| **Additional Features** | Independent offline recording<br>USB mass storage mode |
+| **Battery Capacity** | 3.7V 80mAh |
+| **LED Indicator** | Blue, Green, Cyan status indicators |
+| **Work Modes** | App Mode (streaming), Local/Offline Mode, USB Disk Mode |
 | **App Support** | Hearit.AI (iOS 11.0+ / Android 7.0+) |
 
 ---
 
-### Key Applications
+### 3. Core Features Overview
 
-1. **Independent Audio Logging**  
-   Record crystal-clear voice notes directly to the 128MB onboard SD NAND, then transfer files effortlessly via USB-C mass storage mode.
-2. **Next-Generation Smart Interface**  
-   Benefit from enhanced Bluetooth 5.4 connectivity for lower power consumption and improved transmission reliability during real-time speech-to-text workflows.`
+| Feature | Description / Specifications |
+| :--- | :--- |
+| **Standalone Recording** | Double-click to record instantly without a smartphone connected. |
+| **Ultra-Lightweight** | Weighs only 8.8 grams — easily clips onto collars, pockets, or straps. |
+| **128MB NAND Storage** | Large onboard storage securely holds hours of compressed PCM voice files. |
+| **USB Disk Mode** | Connects to Windows/Mac/Linux to manage recorded WAV files without software. |
+| **Dual-Mode Operation** | Use as an App-connected microphone or an independent field recorder. |
+
+---
+
+### 4. Built for Real-World Workflows
+
+#### Daily Meetings & Lectures
+HA-MIC01C is perfect for students, journalists, and business professionals. Clip it on, double-click, and let it capture the entire meeting or lecture offline. Later, upload it to the Hearit.AI app for transcription and AI summarization.
+
+#### Field Research & Interviewing
+In remote locations where Wi-Fi or cellular connections are unavailable, HA-MIC01C's offline storage shines. Conduct interviews, log observations, and dictate thoughts directly to the device.
+
+---
+
+### 5. Quick Start Guide
+
+**What's in the box?**
+* 1 × HA-MIC01C Device
+* 1 × USB-C Cable
+
+#### Step 1: Charging
+* Connect the HA-MIC01C to any USB charger with the included cable.
+* Red LED indicates charging. Green LED indicates full charge.
+
+#### Step 2: Local Offline Recording
+* Double-click the **Front Button** to start local recording.
+* Cyan breathing LED indicates local recording is active.
+* Double-click the **Front Button** again to stop and save the file.
+
+#### Step 3: Accessing Recorded Files
+* Plug the device into your computer's USB port.
+* Copy or play the audio files directly from the mounted drive.`
   },
   {
     id: "ha-mic04",
@@ -791,105 +1011,54 @@ stream.on('biometrics', (metrics) => {
 
   // --- Solutions ---
   {
-    id: "solution-iot",
-    title: "IoT Telemetry Ingestion",
-    subtitle: "Processing and transforming high-frequency metric streams from millions of edge devices.",
+    id: "solution-web-demo",
+    title: "Web-Demo",
+    subtitle: "Experience the browser-based interactive voice interface for GMIC devices.",
     category: "solutions",
-    icon: "Compass",
-    readingTime: 4,
-    keywords: ["iot", "telemetry", "solutions", "edge", "scaling", "industrial"],
-    content: `## High-Throughput IoT Pipeline Design
-
-Industrial IoT environments regularly generate tens of gigabytes of sensor readings per second. Piping raw streams directly into long-term databases inevitably triggers write bottlenecks. AetherFlow provides a proven pattern for edge preprocessing and sliding-window compression.
-
----
-
-### Proposed Topology Pattern
-
-1. **Local Edge Buffering**: Edge nodes ingest UDP/MQTT sensor metrics directly, preventing packet loss during intermittent network disruptions.
-2. **Dynamic Sliding Window**: Average high-frequency metrics (like high-frequency heat sensors) over 10-second intervals directly inside the embedded Javascript worker sandbox.
-3. **Targeted Compaction**: Publish only consolidated telemetry summaries to the primary cloud broker, decreasing storage overhead by **over 80%**.
-
----
-
-### Visual Implementation Example
-
-\`\`\`javascript
-// Edge Processor Operator
-export function transform(event) {
-  // Discard incomplete metric arrays
-  if (!event.temp || event.temp < -50 || event.temp > 150) {
-    return null; // Dropped automatically
-  }
-  
-  // Tag metadata and compress precision
-  return {
-    device_id: event.id,
-    celsius: parseFloat(event.temp.toFixed(1)),
-    reading_time: Date.now()
-  };
-}
-\`\`\`
-
-By converting high-chatter sensor telemetry into consolidated structural event packets, your cloud databases can focus purely on historical analysis rather than raw I/O survival.`
+    icon: "LayoutGrid",
+    readingTime: 1,
+    keywords: ["web", "demo", "interface", "testing", "browser"],
+    content: `## Web-Demo: Browser-Based Voice Interface`
   },
   {
-    id: "solution-fraud",
-    title: "Real-time Fraud & Risk Detection",
-    subtitle: "Securing financial transactional pipelines using sub-millisecond AI scoring models.",
+    id: "solution-realtime-demo",
+    title: "Real-time Demo",
+    subtitle: "Ultra-low latency streaming voice parsing and wake-word verification.",
     category: "solutions",
-    icon: "ShieldAlert",
-    readingTime: 4,
-    keywords: ["fraud", "security", "financial", "solutions", "risk", "anomaly"],
-    content: `## Sub-Millisecond Risk Evaluation
-
-In online credit card processing or modern banking transaction pipelines, fraud detection must execute **inline before transactions are completed**. Waiting for batch analytics is no longer acceptable. AetherFlow handles multi-stream joins and inline model matching in sub-millisecond timeframes.
-
----
-
-### Strategic Real-time Pipeline
-
-* **Multi-Source Joins**: Join incoming transaction events live with user device registries and geolocation lists using partition key routing.
-* **Velocity Checking**: Compute transactional velocity (e.g., total card actions executed in the past 60 seconds) using highly optimized sliding memory rings.
-* **Microsecond Flagging**: If transaction parameters deviate from a user's normal physical coordinates or velocity limits, the engine triggers an automated backpressure reject, freezing the checkout step instantly.
-
----
-
-### High-Velocity Checking Policy
-
-| Check | Threshold Limit | System Action | Recovery Loop |
-| :--- | :--- | :--- | :--- |
-| **IP Deviation** | Different continent in < 30 mins | Trigger Multi-Factor Verification | Flag IP as high-risk |
-| **Velocity Limit** | More than 5 checkout attempts/min | Temporary account freeze | Auto-unlock after 15 mins |
-| **Amount Delta** | Exceeds 400% of average ticket size | Prompt secure OTP code | Return code 403 Forbidden |`
+    icon: "Radio",
+    readingTime: 1,
+    keywords: ["real-time", "streaming", "latency", "pipeline", "parser"],
+    content: `## Real-time Demo: Sub-100ms Streaming Voice Parsing`
   },
   {
-    id: "solution-cdc",
-    title: "Transactional CDC Pipelines",
-    subtitle: "Real-time Change Data Capture database synchronization with zero loss.",
+    id: "solution-retail-demo",
+    title: "Retail Demo",
+    subtitle: "Hands-free inventory lookup, customer tagging, and warehouse coordination.",
     category: "solutions",
     icon: "Layers",
-    readingTime: 4,
-    keywords: ["cdc", "database", "pipeline", "solutions", "change data capture", "sync"],
-    content: `## Real-Time Database Replication (CDC)
-
-Maintaining analytical read-replicas or moving operational data into analytical systems like Snowflake can be a nightmare when using batch ETLs. Real-time **Change Data Capture (CDC)** solves this by piping database write-ahead logs (WAL) straight into AetherFlow partitions as an active event stream.
-
----
-
-### CDC Benefits with AetherFlow
-
-1. **Minimal Host CPU Overhead**: The host database doesn't need to execute complex polling queries. AetherFlow agents read the binary journal files directly off disk.
-2. **Sequential Integrity**: Because AetherFlow guarantees strict FIFO ordering within each log partition, transactional inserts, updates, and deletes are executed on target warehouses in the exact order they occurred.
-3. **Schema Transformation**: Align, mask, or strip sensitive columns (such as credit card numbers or raw password hashes) using sandboxed processor functions before streaming them into shared warehouses.
-
----
-
-### Supported CDC Connectors
-
-* **PostgreSQL (Logical Replication)**: Ingests changes directly via \`pgoutput\` plugins.
-* **MySQL Binlog Agent**: Subscribes as a virtual replication node to capture binary transaction operations.
-* **MongoDB Change Streams**: Converts unstructured document inserts and edits into uniform JSON event streams.`
+    readingTime: 1,
+    keywords: ["retail", "inventory", "logistics", "hands-free"],
+    content: `## Retail Demo: Hands-Free Store Operations`
+  },
+  {
+    id: "solution-soap-note-demo",
+    title: "SOAP Note Demo",
+    subtitle: "Automated medical consultation transcription to clinical SOAP notes.",
+    category: "solutions",
+    icon: "Activity",
+    readingTime: 1,
+    keywords: ["medical", "soap", "clinical", "transcription", "healthcare"],
+    content: `## SOAP Note Demo: Clinical Voice-to-Text Analytics`
+  },
+  {
+    id: "solution-translation-demo",
+    title: "Translation demo",
+    subtitle: "Real-time cross-lingual voice translation on GMIC edge wearable hardware.",
+    category: "solutions",
+    icon: "Sparkles",
+    readingTime: 1,
+    keywords: ["translation", "multilingual", "cross-lingual", "edge"],
+    content: `## Translation Demo: Seamless Cross-Lingual Communication`
   },
 
   // --- Support ---

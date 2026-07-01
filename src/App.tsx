@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import DocView from "./components/DocView";
 import ApiPlayground from "./components/ApiPlayground";
 import AiAssistant from "./components/AiAssistant";
+import MicrophoneDevicesOverview from "./components/MicrophoneDevicesOverview";
 import { 
   Menu, X, Sparkles, Terminal, Compass, LayoutGrid, Search, 
   Command, ChevronRight, HelpCircle, FileCode, CheckCircle, Github
@@ -143,6 +144,8 @@ export default function App() {
                 <AiAssistant />
               ) : activeId === "api-playground" ? (
                 <ApiPlayground />
+              ) : activeId === "microphone-devices" ? (
+                <MicrophoneDevicesOverview onSelect={handleSelectId} />
               ) : activeDoc ? (
                 <DocView
                   doc={activeDoc}

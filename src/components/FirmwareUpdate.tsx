@@ -34,18 +34,17 @@ const FIRMWARE_DATA: Record<string, FirmwareDetails> = {
     ]
   },
   "ha-mic01c": {
-    currentVersion: "v1.0.8",
-    latestVersion: "v1.2.0",
-    releaseDate: "2026-06-20",
-    size: "4.8 MB",
+    currentVersion: "v1.0.1",
+    latestVersion: "v1.0.1", // up to date
+    releaseDate: "2026-05-10",
+    size: "1.5 MB",
     changelog: [
-      "Added support for 32-bit float offline recording format.",
-      "Accelerated USB mass-storage read speed by 35%.",
-      "Corrected time-sync drift during extended recording sessions over 4 hours."
+      "Improved offline FAT32 storage writing speeds for continuous streaming files.",
+      "Optimized standby power leakage to preserve charge over long idle cycles."
     ],
     history: [
-      { version: "v1.0.8", date: "2026-02-18", note: "Hotfix for SD card write buffer overflows." },
-      { version: "v1.0.2", date: "2025-12-01", note: "Initial release with offline recording capability." }
+      { version: "v1.0.1", date: "2026-05-10", note: "Fixed standard USB Mass Storage filesystem sync bugs." },
+      { version: "v1.0.0", date: "2026-02-18", note: "Initial offline recorder firmware release." }
     ]
   },
   "ha-mic04": {

@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { ChevronDown, ChevronUp, AlertTriangle, HelpCircle, Sparkles, Mail, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
+interface FAQViewProps {
+  docId?: string;
+}
+
 interface FAQItem {
   id: string;
   question: string;
@@ -9,11 +13,11 @@ interface FAQItem {
   category: "General" | "Recording" | "Hardware" | "Connectivity";
 }
 
-export default function FAQView() {
+export default function FAQView({ docId }: FAQViewProps) {
   const [expandedId, setExpandedId] = useState<string | null>("q1");
   const [activeCategory, setActiveCategory] = useState<string>("All");
 
-  const faqs: FAQItem[] = [
+  const mic06bFaqs: FAQItem[] = [
     {
       id: "q1",
       category: "General",
@@ -186,6 +190,116 @@ export default function FAQView() {
       ),
     },
   ];
+
+  const mic01bFaqs: FAQItem[] = [
+    {
+      id: "q1",
+      category: "General",
+      question: "Q1: How do I switch between AI modes?",
+      answer: (
+        <p className="leading-relaxed">
+          Single-press the <strong className="text-neutral-950 font-semibold">Side button</strong> to cycle through modes in this order: <span className="inline-flex items-center gap-1 font-semibold">Translation 🌍</span> → <span className="inline-flex items-center gap-1 font-semibold">Meeting 📓</span> → <span className="inline-flex items-center gap-1 font-semibold">Custom 🤖</span> → <span className="inline-flex items-center gap-1 font-semibold">Note-Taking ✍️</span>. You'll see a blue LED flash once and feel a short vibration when the mode changes.
+        </p>
+      ),
+    },
+    {
+      id: "q2",
+      category: "General",
+      question: "Q2: How do I know which mode I'm currently in?",
+      answer: (
+        <p className="leading-relaxed">
+          Long-press the <strong className="text-neutral-950 font-semibold">Side button</strong> while connected to the app. The app will announce the current mode via TTS (text-to-speech).
+        </p>
+      ),
+    },
+    {
+      id: "q3",
+      category: "Connectivity",
+      question: "Q3: Why isn't my device connecting?",
+      answer: (
+        <ul className="list-disc pl-4 space-y-1.5 text-neutral-600">
+          <li>Ensure Bluetooth is enabled on your phone</li>
+          <li>Check if the device is in pairing mode (LED flashing red-blue)</li>
+          <li>Try pressing the Front or Side button to wake up the device</li>
+          <li>Make sure the device is within 10m range of your phone</li>
+        </ul>
+      ),
+    },
+    {
+      id: "q4",
+      category: "Hardware",
+      question: "Q4: How long does it take to charge the device?",
+      answer: (
+        <p className="leading-relaxed">
+          Approximately 1 hour for a full charge. The green LED will be solid during charging and turn off when fully charged.
+        </p>
+      ),
+    },
+    {
+      id: "q5",
+      category: "Connectivity",
+      question: "Q5: Can the device connect to multiple phones at once?",
+      answer: (
+        <p className="leading-relaxed">
+          No, the HA-MIC01B supports one Bluetooth connection at a time.
+        </p>
+      ),
+    },
+    {
+      id: "q6",
+      category: "Connectivity",
+      question: "Q6: How do I disconnect the device?",
+      answer: (
+        <p className="leading-relaxed">
+          You need to actively disconnect in the Hearit.AI app. Go to device settings and tap "Disconnect".
+        </p>
+      ),
+    },
+    {
+      id: "q7",
+      category: "General",
+      question: "Q7: How do I power off the device?",
+      answer: (
+        <p className="leading-relaxed">
+          Long-press the Side button for 3 seconds to power off the device.
+        </p>
+      ),
+    },
+    {
+      id: "q8",
+      category: "General",
+      question: "Q8: Does mode switching work when disconnected from the app?",
+      answer: (
+        <p className="leading-relaxed">
+          The device will still cycle through modes when you press the Side button, but you won't hear the mode announcement. The modes will take effect once you reconnect to the app.
+        </p>
+      ),
+    },
+    {
+      id: "q9",
+      category: "Hardware",
+      question: "Q9: Can I use the device while it's charging?",
+      answer: (
+        <p className="leading-relaxed">
+          Yes, you can use all functions of the HA-MIC01B while it's charging via the USB Type-C cable.
+        </p>
+      ),
+    },
+    {
+      id: "q10",
+      category: "Hardware",
+      question: "Q10: What should I do if the device won't wake up?",
+      answer: (
+        <ul className="list-disc pl-4 space-y-1.5 text-neutral-600">
+          <li>Charge the device for at least 10 minutes</li>
+          <li>Press the Front or Side button</li>
+          <li>If still not responding, try charging for a longer period</li>
+        </ul>
+      ),
+    },
+  ];
+
+  const faqs = docId === "ha-mic01b" ? mic01bFaqs : mic06bFaqs;
 
   const categories = ["All", "General", "Recording", "Connectivity", "Hardware"];
 

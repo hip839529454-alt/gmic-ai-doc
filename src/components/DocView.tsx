@@ -117,8 +117,11 @@ export default function DocView({
     let intro = "";
     let main = content;
 
-    // Pattern 1: Split at "### 5. "
-    let splitIndex = content.indexOf("### 5. ");
+    // Pattern 1: Split at "### Quick Start Guide" first if present
+    let splitIndex = content.indexOf("### Quick Start Guide");
+    if (splitIndex === -1) {
+      splitIndex = content.indexOf("### 5. ");
+    }
     if (splitIndex === -1) {
       splitIndex = content.indexOf("### 4. ");
     }
@@ -264,6 +267,61 @@ Notes:
 * After successful flashing, the program will display a prompt message such as "Flashing Completed" or "Success"
 * The device will restart automatically or prompt that it can be disconnected
 * Disconnect the USB connection and check if the device can start normally
+* If the device starts normally, the flashing is successful` : doc.id === "ha-mic01b" ? `#### Device Information
+* **Product Model**: HA-MIC01B
+* **Device Guide**: MIC01B User Guide
+
+#### Firmware Update Methods
+We regularly release new firmware to optimize performance and add new features. You can update your device using one of the following methods:
+
+##### Method 1: Product Flashing (Windows)
+This method is suitable for advanced users or when the online update is not available.
+
+###### Preparations Before Starting
+Required Items:
+* A computer running the Windows operating system (supports Windows 7/8/10/11)
+* Original USB data cable
+* Device to be flashed
+* Flashing program corresponding to the device (.exe file)
+* 📥 [Download Flashing Program](https://ota-api.hearit.ai/files/MIC01B)
+
+Notes:
+* Ensure the computer has sufficient battery power to avoid power failure during operation
+* Use the original USB data cable to ensure connection stability
+* Disable antivirus software and firewalls on the computer before flashing to prevent interference with program operation
+* Do not disconnect the USB connection or close the flashing program during the flashing process
+
+###### Flashing Steps
+###### Step 1: Prepare the Device
+* Ensure your device is charged (at least 50% battery)
+* Power on the device if it's not already on
+* Connect the device to your computer via USB cable
+* The device should be recognized as a USB device
+
+###### Step 2: Launch the Flashing Program
+* Locate the flashing .exe file corresponding to the device
+* Double-click the file to launch the flashing program
+* Wait for the program to load completely (the main program interface usually appears)
+
+###### Step 3: Device Detection
+* Ensure the USB connection is secure between your computer and the device
+* The flashing program should automatically detect the device
+* Confirm the connection status displayed on the program interface flashing-mode
+
+###### Step 4: Automatic Flashing Process
+* The flashing program will automatically begin the firmware update
+* The program interface will display the connection status and flashing progress
+* Wait for the flashing to complete; do not perform any operations during this period Flashing-completed
+
+###### Step 5: Manually Trigger Flashing (If Automatic Flashing Does Not Start)
+* If the program does not start flashing automatically, check the USB connection
+* Find and click the "Update Mode" or "Start Flashing" button in the flashing program interface
+* Observe the progress bar displayed on the program interface and wait for the flashing to complete
+
+###### Completion and Verification
+* After successful flashing, the program will display a prompt message such as "Flashing Completed" or "Success"
+* The device will restart automatically or prompt that it can be disconnected
+* Disconnect the USB connection and check if the device can start normally
 * If the device starts normally, the flashing is successful` : "";
 
   const currentContent = ["microphone-devices", "telalive-series", "wearable-devices"].includes(doc.category)
@@ -290,7 +348,7 @@ Notes:
       case "wearable-devices":
         return "Wearable Devices";
       case "solutions":
-        return "Solutions";
+        return "AI Demo Navigation";
       case "support":
         return "FAQ";
       default:
@@ -486,7 +544,7 @@ Notes:
             <MarkdownRenderer content={adjustedMainContent} />
           ) : activeSubTab === "firmware" ? (
             <div className="space-y-8 animate-fadeIn">
-              {doc.id === "ha-mic06b" && (
+              {(doc.id === "ha-mic06b" || doc.id === "ha-mic01b") && (
                 <div className="prose prose-neutral max-w-none">
                   <MarkdownRenderer content={firmwareContent} />
                 </div>
@@ -494,7 +552,7 @@ Notes:
             </div>
           ) : (
             <div className="animate-fadeIn">
-              <FAQView />
+              <FAQView docId={doc.id} />
             </div>
           )}
         </article>

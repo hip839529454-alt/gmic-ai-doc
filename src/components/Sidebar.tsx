@@ -125,23 +125,33 @@ export default function Sidebar({ docs, activeId, onSelect, selectedMicModels, o
 
   const renderFolderHeader = (categoryKey: string, label: string, icon: React.ReactNode, count: number) => {
     const isExpanded = isSearching || expandedCategories[categoryKey];
+    const isActive = activeId === categoryKey;
     return (
       <button
-        onClick={() => toggleCategory(categoryKey)}
-        className="w-full flex items-center justify-between py-2 px-3 hover:bg-neutral-50/80 rounded-xl transition-all duration-150 text-left font-sans cursor-pointer group mt-3.5 first:mt-0"
+        onClick={() => {
+          toggleCategory(categoryKey);
+          if (categoryKey === "microphone-devices") {
+            onSelect(categoryKey);
+          }
+        }}
+        className={`w-full flex items-center justify-between py-2 px-3 rounded-xl transition-all duration-150 text-left font-sans cursor-pointer group mt-3.5 first:mt-0 ${
+          isActive
+            ? "bg-neutral-900 text-white shadow-sm font-semibold"
+            : "hover:bg-neutral-50/80 text-neutral-800"
+        }`}
       >
         <div className="flex items-center gap-2.5">
-          <span className="text-neutral-400 group-hover:text-neutral-800 transition-colors">
+          <span className={`transition-colors ${isActive ? "text-white" : "text-neutral-400 group-hover:text-neutral-800"}`}>
             {icon}
           </span>
-          <span className="text-xs font-bold tracking-tight text-neutral-800 group-hover:text-black">
+          <span className={`text-xs font-bold tracking-tight transition-colors ${isActive ? "text-white" : "text-neutral-800 group-hover:text-black"}`}>
             {label}
           </span>
-          <span className="text-[10px] font-semibold text-neutral-400 font-mono bg-neutral-100 px-1.5 py-0.2 rounded-md">
+          <span className={`text-[10px] font-semibold font-mono px-1.5 py-0.2 rounded-md ${isActive ? "bg-white/10 text-white" : "bg-neutral-100 text-neutral-400"}`}>
             {count}
           </span>
         </div>
-        <span className="text-neutral-400 group-hover:text-neutral-600 transition-colors">
+        <span className={`transition-colors ${isActive ? "text-white/80" : "text-neutral-400 group-hover:text-neutral-600"}`}>
           {isExpanded ? <ChevronDown size={13} /> : <ChevronRight size={13} />}
         </span>
       </button>
@@ -265,7 +275,7 @@ export default function Sidebar({ docs, activeId, onSelect, selectedMicModels, o
         {/* Category 5: Solutions */}
         {(solutionsCount > 0) && (
           <>
-            {renderFolderHeader("solutions", "Solutions", <Compass size={14} />, solutionsCount)}
+            {renderFolderHeader("solutions", "AI Demo Navigation", <Compass size={14} />, solutionsCount)}
             {renderFolderItems("solutions", (
               <>
                 {solutionsDocs.map((doc) => renderNavItem(doc.id, doc.title, getIcon(doc.icon)))}
